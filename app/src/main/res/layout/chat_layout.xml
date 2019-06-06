@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/allusers"
+        android:padding="7dp"
+        android:id="@+id/profilepic"/>
+
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="User Name"
+            android:textSize="20dp"
+            android:id="@+id/user_name"/>
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Time"
+            android:textSize="20dp"
+            android:id="@+id/timex"
+            android:textAlignment="center"
+            android:layout_toRightOf="@id/user_name"/>
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/seen"
+            android:layout_below="@+id/user_name"
+            android:layout_marginTop="5dp"
+            android:id="@+id/seenticks"/>
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="20dp"
+            android:text="message"
+            android:layout_below="@+id/user_name"
+            android:layout_toRightOf="@+id/seenticks"
+            android:layout_margin="5dp"
+            android:id="@+id/message_send" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/messagenotifier"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/timex"
+            android:layout_toRightOf="@id/message_send"
+            android:id="@+id/messnotifier"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
