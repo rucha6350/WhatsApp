@@ -39,7 +39,7 @@ public class NumberPage extends AppCompatActivity {
     }
 
     public void openUserPhoto(){
-        Intent intent1 =new Intent(this, com.rucha.whatsapp.UserPhoto.class);
+        Intent intent1 =new Intent(NumberPage.this, UserPhoto.class);
         startActivity(intent1);
     }
 }

@@ -2,6 +2,7 @@ package com.rucha.whatsapp;
 
 public class Chat {
 
+    private int Photo3;
     private String User_Name;
     private String Time;
     private int Photo1;
@@ -11,12 +12,18 @@ public class Chat {
     public Chat() {
     }
 
-    public Chat(String user_name, String time, int photo1, String message, int photo2) {
+    public Chat(int photo3, String user_name, String time, int photo1, String message, int photo2) {
+
+        Photo3 = photo3;
         User_Name = user_name;
         Time = time;
         Photo1 = photo1;
         Message = message;
         Photo2 = photo2;
+    }
+
+    public int getPhoto3() {
+        return Photo3;
     }
 
     public String getUser_Name() {
@@ -37,6 +44,10 @@ public class Chat {
 
     public int getPhoto2() {
         return Photo2;
+    }
+
+    public void setPhoto3(int photo3) {
+        Photo1 = photo3;
     }
 
     public void setUser_name(String user_name) {

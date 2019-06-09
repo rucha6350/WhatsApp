@@ -13,7 +13,7 @@
         android:layout_height="100dp"
         android:layout_marginHorizontal="170dp"
         android:layout_marginTop="175dp"
-        android:src="@drawable/whatsapp" />
+        android:src="@drawable/whatsaapp" />
 
     <Button
         android:id="@+id/whatsApp"

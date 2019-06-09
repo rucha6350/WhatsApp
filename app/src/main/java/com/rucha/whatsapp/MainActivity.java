@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openNumberPage(){
-        Intent intent=new Intent(this, com.rucha.whatsapp.NumberPage.class);
+        Intent intent=new Intent(MainActivity.this, NumberPage.class);
         startActivity(intent);
     }
 

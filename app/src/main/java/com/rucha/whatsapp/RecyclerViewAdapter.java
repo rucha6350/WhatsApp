@@ -36,6 +36,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
 
+        holder.img_pp.setImageResource(mData.get(position).getPhoto3());
         holder.tv_username.setText(mData.get(position).getUser_Name());
         holder.tv_timex.setText(mData.get(position).getTime());
         holder.img_ticks.setImageResource(mData.get(position).getPhoto1());
@@ -50,6 +51,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     }
 
     public static class MyViewHolder extends RecyclerView.ViewHolder{
+        private ImageView img_pp;
         private TextView tv_username;
         private TextView tv_timex;
         private ImageView img_ticks;
@@ -59,6 +61,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
+            img_pp = (ImageView) itemView.findViewById(R.id.profilepic);
             tv_username = (TextView) itemView.findViewById(R.id.user_name);
             tv_timex = (TextView) itemView.findViewById(R.id.timex);
             img_ticks = (ImageView) itemView.findViewById(R.id.seenticks);

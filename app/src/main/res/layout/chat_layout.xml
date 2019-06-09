@@ -4,27 +4,28 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:src="@drawable/allusers"
-        android:padding="7dp"
-        android:id="@+id/profilepic"/>
-
     <RelativeLayout
-        android:layout_width="330dp"
+        android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:orientation="vertical"
-        android:layout_marginLeft="10dp">
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/allusers"
+            android:id="@+id/profilepic" />
+
 
         <TextView
+            android:id="@+id/user_name"
             android:layout_width="265dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
             android:layout_marginTop="10dp"
-            android:textStyle="bold"
+            android:layout_toRightOf="@+id/profilepic"
             android:text="User Name"
             android:textSize="20dp"
-            android:id="@+id/user_name"/>
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="60dp"
@@ -39,24 +40,30 @@
 
         <ImageView
             android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_height="25dp"
             android:src="@drawable/seen"
+            android:layout_toRightOf="@+id/profilepic"
             android:layout_below="@+id/user_name"
             android:layout_marginTop="5dp"
+            android:layout_marginLeft="7dp"
             android:id="@+id/seenticks"/>
 
         <TextView
+            android:id="@+id/message_send"
             android:layout_width="240dp"
-            android:layout_height="20dp"
-            android:text="message"
+            android:layout_height="25dp"
             android:layout_below="@+id/user_name"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
             android:layout_toRightOf="@+id/seenticks"
-            android:layout_margin="5dp"
-            android:id="@+id/message_send" />
+            android:text="message" />
 
         <ImageView
             android:layout_width="60dp"
-            android:layout_height="wrap_content"
+            android:layout_height="25dp"
             android:src="@drawable/messagenotifier"
             android:layout_marginTop="5dp"
             android:layout_below="@id/timex"

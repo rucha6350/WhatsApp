@@ -25,7 +25,7 @@ public class UserPhoto extends AppCompatActivity {
     }
 
     public void openChats(){
-        Intent intent2 = new Intent(this,Chats.class);
+        Intent intent2 = new Intent(UserPhoto.this,Chats.class);
         startActivity(intent2);
     }
 }
